@@ -66,7 +66,6 @@ console.log(output);
 
 //Write a function called "checkAge". Given a person's name and age, "checkAge" returns one of two messages: "Go home, {insert_name_here}!", if they are younger than 21. "Welcome, {insert_name_here}!", if they are 21 or older. Naturally, replace "{insert_name_here}" with the given name. :)
 function checkAge(name, age) {
-    // your code here
     if(age >= 21){
         return "Since you are legally able to drink, Welcome to the party, " + firstName + '!';
     } else {
@@ -81,7 +80,6 @@ console.log(output);
 //
 // Given 2 numbers, "areBothOdd" returns whether or not both of the given numbers are odd.
 function areBothOdd(x, y) {
-    // your code here
     if(x % 2 === 1 && y % 2 === 1){
         return "Both of your numbers are odd.";
     }else{
@@ -109,7 +107,6 @@ console.log(output);
 // Write a function called "isOddLength".
 //     Given a word, "isOddLength" returns whether the length of the given word is odd.
 function isOddLength(word) {
-    // your code here
     if(word.length % 2 === 1){
         return "The length of your favorite word is odd.";
     } else {
@@ -123,7 +120,6 @@ console.log(output);
 //Write a function called "isEvenLength".
 // Given a word, "isEvenLength" returns whether the length of the word is even.
 function isEvenLength(word) {
-    // your code here
     if(word.length % 2 === 0){
         return "The length of your favorite word is even.";
     } else {
@@ -137,7 +133,7 @@ console.log(output);
 // Write a function called "isEvenAndGreaterThanTen".
 //     Given a number, "isEvenAndGreaterThanTen" returns whether it is both even and greater than 10.
 function isEvenAndGreaterThanTen(num) {
-    // your code here
+
     if(num % 2 === 0 && num > 10){
         return "The sum of both of your numbers is, both, even and greater than 10";
     }else {
@@ -162,7 +158,7 @@ console.log(output);
 // Write a function called "computeAreaOfATriangle".
 //     Given the base and height of a triangle, "computeAreaOfATriangle" returns its area.
 function computeAreaOfATriangle(base, height) {
-    // your code here
+
     return "If your number was the base and height of a triangle, the area would be " + base * height / 2;
 }
 var output = computeAreaOfATriangle(num1, num2);
@@ -172,7 +168,7 @@ console.log(output);
 // Write a function called "cube".
 //     Given a number, "cube" returns the cube of that number.
 function cube(num) {
-    // your code here
+
     return "The sum of your numbers cubed is " + num ** 3;
 }
 var output = cube(numSum);
@@ -192,7 +188,7 @@ console.log(output);
 // Write a function called "computeAverageLengthOfWords".
 //     Given two words, "computeAverageLengthOfWords" returns the average of their lengths.
 function computeAverageLengthOfWords(word1, word2){
-    // your code here
+
     var sum = word1.length + word2.length;
     var average = sum / 2;
     return "The average length of both of your  words is " + average;
@@ -228,7 +224,7 @@ console.log(person.fullName);
 // Notes:
 // The legal driving age in the United States is 16.
 function isPersonOldEnoughToDrive(person) {
-    // your code here
+
     if(person.age >= 16){
         return true;
     } else {
@@ -246,7 +242,7 @@ console.log(output); // --> true
 //     Notes:
 // The legal voting age in the United States is 18.
 function isPersonOldEnoughToVote(person) {
-    // your code here
+
     if(person.age >= 18){
         return true;
     } else{
@@ -263,7 +259,6 @@ console.log(output); // --> true
 //
 // Given an object, a key, and an array, "addArrayProperty" sets a new property on the object at the given key, with its value set to the given array.
 function addArrayProperty(obj, key, arr) {
-    // your code here
     obj[key] = arr
 }
 var myObj = {};
@@ -276,7 +271,6 @@ console.log(myObj.myProperty); // --> [1, 3]
 // Notes:
 // If the array has a length of 0, it should return 'undefined'.
 function getNthElement(array, n) {
-    // your code here
     return array[n];
 }
 var output = getNthElement([1, 3, 5], 1);
@@ -298,10 +292,33 @@ console.log(output); // --> 1
 //     Notes:
 // If the given array has a length of 0, it should return 'undefined'.
 function getLastElement(array) {
-    // your code here
     var length = array.length -1;
     return array[length];
 
 }
 var output = getLastElement([1, 2, 3, 4]);
 console.log(output); // --> 4
+
+// Write a function called "addToFront".
+//     Given an array and an element, "addToFront" adds the given element to the front of the given array, and returns the given array.
+//     Notes:
+// It should be the SAME array, not a new array.
+// In order to do this you should be familiar with the 'unshift' method.
+function addToFront(arr, element) {
+    arr.unshift(element);
+    return arr;
+}
+var output = addToFront([1, 2], 3);
+console.log(output); // -> [3, 1, 2]
+//Write a function called "addToBack".
+// Given an array and an element, "addToBack" returns the given array with the given element added to the end.
+// Notes:
+// It should be the SAME array, not a new array.
+// In order to do this you should be familiar with the 'push' method.
+function addToBack(arr, element) {
+    // your code here
+    arr.push(element);
+    return arr;
+}
+var output = addToBack([1, 2], 3);
+console.log(output); // -> [1, 2, 3]
