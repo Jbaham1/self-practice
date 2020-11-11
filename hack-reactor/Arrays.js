@@ -48,9 +48,31 @@ console.log(output); // -> [3, 1, 2]
 // It should be the SAME array, not a new array.
 // In order to do this you should be familiar with the 'push' method.
 function addToBack(arr, element) {
-    // your code here
     arr.push(element);
     return arr;
 }
 var output = addToBack([1, 2], 3);
 console.log(output); // -> [1, 2, 3]
+
+//Given two arrays, "joinArrays" returns an array with the elements of "arr1" in order, followed by the elements in "arr2".
+function joinArrays(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+var output = joinArrays([1, 2], [3, 4]);
+console.log(output); // --> [1, 2, 3, 4]
+
+//Write a function called "getElementsAfter".
+// Given an array and an index, "getElementsAfter" returns a new array with all the elements after (but not including) the given index.
+function getElementsAfter(array, n) {
+    return array.slice(n+1);
+}
+var output = getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);
+console.log(output); // --> ['d', 'e']
+
+//Write a function called "getElementsUpTo".
+// Given an array and a index, "getElementsUpTo", returns an array with all the elements up until, but not including, the element at the given index.
+function getElementsUpTo(array, n) {
+    return array.slice(0, n)
+}
+var output = getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3)
+console.log(output); // --> ['a', 'b', 'c']
