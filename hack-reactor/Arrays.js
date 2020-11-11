@@ -98,7 +98,6 @@ console.log(output); // --> [1, 2 , 3]
 //Write a function called "removeFromFront".
 // Given an array, "removeFromFront" returns the given array with its first element removed.
 function removeFromFront(arr) {
-    // your code here
     arr.shift()
     return arr;
 }
@@ -108,9 +107,46 @@ console.log(output); // --> [2, 3]
 //Write a function called "removeFromBack".
 // Given an array, "removeFromBack" returns the given array with its last element removed.
 function removeFromBack(arr) {
-    // your code here
     arr.pop();
     return arr;
 }
 var output = removeFromBack([1, 2, 3]);
 console.log(output); // --> [1, 2]
+
+//Write a function called "removeFromBackOfNew".
+// Given an array, "removeFromBackOfNew" returns a new array containing all but the last element of the given array.
+function removeFromBackOfNew(arr) {
+    var result = arr.slice(0,arr.length -1)
+    return result;
+}
+var arr = [1, 2, 3];
+var output = removeFromBackOfNew(arr);
+console.log(output); // --> [1, 2]
+console.log(arr); // --> [1, 2, 3]
+
+//Write a function called "removeFromFrontOfNew".
+// Given an array, "removeFromFrontOfNew" returns a new array containing all but the first element of the given array.
+function removeFromFrontOfNew(arr) {
+    var copyOfArr = arr.slice();
+    copyOfArr.shift();
+    return copyOfArr
+}
+var arr = [1, 2, 3];
+var output = removeFromFrontOfNew(arr);
+console.log(output); // --> [2, 3]
+console.log(arr); // --> [1, 2, 3]
+
+//Write a function called "countCharacter".
+// Given a string input and a character, "countCharacter" returns the number of occurrences of a given character in the given string.
+function countCharacter(str, char) {
+    var count = 0
+    for(var i = 0; i < str.length; i++){
+        var currentChar = str[i];
+        if(currentChar === char){
+            count++;
+        }
+    }
+    return count;
+}
+var output = countCharacter('I am a hacker', 'a');
+console.log(output); // --> 3
