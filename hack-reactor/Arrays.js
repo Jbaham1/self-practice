@@ -104,3 +104,13 @@ function removeFromFront(arr) {
 }
 var output = removeFromFront([1, 2, 3]);
 console.log(output); // --> [2, 3]
+
+//Write a function called "removeFromBack".
+// Given an array, "removeFromBack" returns the given array with its last element removed.
+function removeFromBack(arr) {
+    // your code here
+    arr.pop();
+    return arr;
+}
+var output = removeFromBack([1, 2, 3]);
+console.log(output); // --> [1, 2]
