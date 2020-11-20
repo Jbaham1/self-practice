@@ -1,0 +1,32 @@
+img{
+    height: 140px;
+    width: 120px;
+}
+.right{
+    text-align: right;
+    text-decoration: underline;
+}
+.left{
+    text-align: left;
+    text-decoration: overline underline;
+}
+
+.right>img {
+    float: left;
+}
+.left>img {
+    float: right;
+}
+
+body {
+    background-color: lightcyan;
+}
+p{
+    color: darkmagenta;
+}
+h4,h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: purple;
+}
