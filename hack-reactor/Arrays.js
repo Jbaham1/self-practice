@@ -150,3 +150,60 @@ function countCharacter(str, char) {
 }
 var output = countCharacter('I am a hacker', 'a');
 console.log(output); // --> 3
+
+//Write a function called "convertDoubleSpaceToSingle".
+// Given a string, "convertDoubleSpaceToSingle" returns the passed in string, with all the double spaces converted to single spaces.
+//In order to do this problem, you should be familiar with "String.split", and "Array.join".
+
+function convertDoubleSpaceToSingle(str) {
+    var split = str.split('  ');
+
+    var joinSplit = split.join(' ')
+    return joinSplit;
+}
+var output = convertDoubleSpaceToSingle("string  with  double  spaces");
+console.log(output); // --> "string with double spaces"
+
+
+//Write a function called "joinThreeArrays".
+// Given three arrays, "joinThreeArrays" returns an array with the elements of "arr1" in order followed by the elements in "arr2" in order followed by the elements of "arr3" in order.
+//You should be familiar with the "concat" method for this problem.
+function joinThreeArrays(arr1, arr2, arr3) {
+    var firstTwo = arr1.concat(arr2)
+    return firstTwo.concat(arr3);
+}
+var output = joinThreeArrays([1, 2], [3, 4], [5, 6]);
+console.log(output); // --> [1, 2, 3, 4, 5, 6]
+
+//Write a function called "addToFrontOfNew".
+// Given an array and an element, "addToFrontOfNew" returns a new array containing all the elements of the given array, with the given element added to the front.
+// Important: It should be a NEW array instance, not the original array instance.
+function addToFrontOfNew(arr, element) {
+    var copyOfArr = arr.slice();
+    copyOfArr.unshift(element);
+    return copyOfArr;
+}
+var input = [1, 2];
+var output = addToFrontOfNew(input, 3);
+console.log(output); // --> [3, 1, 2];
+console.log(input); // --> [1, 2]
+//Write a function called "addToBackNew".
+// Given an array and an element, "addToBackNew" returns a clone of the given array, with the given element added to the end.
+// Important: It should be a NEW array instance, not the original array instance.
+function addToBackOfNew(arr, element) {
+    var newArray =  arr.slice();
+    newArray.push(element);
+    return newArray;
+}
+var input = [1, 2];
+var output = addToBackOfNew(input, 3);
+console.log(input); // --> [1, 2]
+console.log(output); // --> [1, 2, 3]
+//Write a function called "getAllElementsButNth".
+// Given an array and an index, "getAllElementsButNth" returns an array with all the elements but the nth.
+function getAllElementsButNth(array, n) {
+    array.splice(n, 1);
+    return array;
+}
+var output = getAllElementsButNth(['a', 'b', 'c'], 1);
+console.log(output); // --> ['a', 'c']
