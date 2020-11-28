@@ -170,3 +170,60 @@ var obj = {
 }
 removeStringValues(obj);
 console.log(obj); // { age: 20 }
+
+//Write a function called "removeNumbersLargerThan".
+// Given a number and an object, "removeNumbersLargerThan" removes any properties whose values are numbers greater than the given number.
+
+function removeNumbersLargerThan(num, obj) {
+    //iterate over obj
+    //if property is larger than num given
+    //remove property
+    for(var key in obj){
+        if(obj[key] > num){
+            delete obj[key];
+        }
+    }
+}
+
+var obj = {
+    a: 8,
+    b: 2,
+    c: 'montana'
+}
+removeNumbersLargerThan(5, obj);
+console.log(obj); // --> { b: 2, c: 'montana' }
+
+// Write a function called "removeNumbersLessThan".
+//     Given a number and an object, "removeNumbersLessThan" removes any properties whose values are numbers less than the given number.
+function removeNumbersLessThan(num, obj) {
+    for(var key in obj){
+        if(obj[key] < num){
+            delete obj[key];
+        }
+    }
+}
+var obj = {
+    a: 8,
+    b: 2,
+    c: 'montana'
+}
+removeNumbersLessThan(5, obj);
+console.log(obj); // --> { a: 8, c: 'montana' }
+
+//Write a function called "removeStringValuesLongerThan".
+// Given an number and an object, "removeStringValuesLongerThan" removes any properties on the given object whose values are strings longer than the given number.
+function removeStringValuesLongerThan(num, obj) {
+    for(var key in obj){
+        if(typeof obj[key] === 'string' && obj[key].length > num){
+            delete obj[key];
+        }
+    }
+}
+
+var obj = {
+    name: 'Montana',
+    age: 20,
+    location: 'Texas'
+};
+removeStringValuesLongerThan(6, obj);
+console.log(obj); // { age: 20, location: 'Texas' }
