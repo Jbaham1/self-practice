@@ -1,0 +1,60 @@
+/*extra small screen less than 576x*/
+    .container {
+        background-color: #E6E6E6;
+    }
+
+    .logo {
+        width: 105px;
+        height: 105px;
+    }
+
+    /*.circle {*/
+    /*    border-radius: 50%;*/
+    /*}*/
+
+    .lg-button {
+        width: 105px;
+        height: 105px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 5px solid white;
+    }
+
+    .sm-btn {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        color: black;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .red-circle {
+background-color: #E6563B;
+
+    }
+
+    .orange-circle {
+background-color: #EB9D3A;
+    }
+
+    .green-circle {
+background-color: #7cb06c;
+    }
+
+    .blue-circle {
+background-color: #00aba9;
+    }
+.card-body{
+    padding: 0;
+    background-color: #E6E6E6;
+}
+.card{
+    background-color: #E6E6E6;
+    border: #E6E6E6;
+}
+.card-img-top{
+    border: 10px solid lightgray;
+}
