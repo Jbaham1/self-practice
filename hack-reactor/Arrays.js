@@ -231,3 +231,50 @@ var obj = {
 };
 var output = select(arr, obj);
 console.log(output); // --> { a: 1, c: 3 }
+
+//Write a function called "filterOddLengthWords".
+// Given an array of strings, "filterOddLengthWords" returns an array containing only the elements of the given array whose lengths are odd numbers.
+function filterOddLengthWords(words) {
+    var isOdd = [];
+    for(i=0; i < words.length; i++){
+        if(words[i].length % 2 ===1){
+            isOdd.push(words[i])
+        }
+    }
+    return isOdd;
+}
+var output = filterOddLengthWords(['there', 'it', 'is', 'now']);
+console.log(output); // --> ['there', "now']
+
+//Write a function called "filterEvenLengthWords".
+// Given an array of strings, "filterEvenLengthWords" returns an array containing only the elements of the given array whose length is an even number.
+function filterEvenLengthWords(words) {
+    var isEven = [];
+    for(i=0; i < words.length; i++){
+        if(words[i].length % 2 === 0){
+            isEven.push(words[i]);
+        }
+    }
+    return isEven
+}
+var output = filterEvenLengthWords(['word', 'words', 'word', 'words']);
+console.log(output); // --> ['word', 'word']
+//Write a function called "getLengthOfLongestElement".
+// Given an array, "getLengthOfLongestElement" returns the length of the longest string in the given array.
+// Notes:
+// It should return 0 if the array is empty.
+function getLengthOfLongestElement(arr) {
+    if(arr.length === 0){
+        return 0;
+    }
+    var longestString = arr[0];
+
+    for(var i = 0; i < arr.length; i++){
+        if(arr[i].length > longestString.length){
+            longestString = arr[i];
+        }
+    }
+    return longestString.length;
+}
+var output = getLengthOfLongestElement(['one', 'two', 'three']);
+console.log(output); // --> 5
