@@ -1,8 +1,4 @@
-<
-link href
-
-=
-"https://fonts.googleapis.com/css?family=Lobster"
+<link href="https://fonts.googleapis.com/css?family=Lobster"
 rel
 
 =
@@ -155,60 +151,4 @@ label > < br >
 name
 
 =
-"personality"
-checked > Loving
-<
-
-/
-label >
-< label >
-< input type
-
-=
-"checkbox"
-name
-
-=
-"personality"
-> Lazy
-<
-
-/
-label >
-< label > < input type
-
-=
-"checkbox"
-name
-
-=
-"personality"
-> Energetic<
-
-/
-label > < br >
-< input type
-
-=
-"text"
-placeholder
-
-=
-"cat photo URL"
-required >
-< button type
-
-=
-"submit"
-> Submit<
-
-/
-button >
-<
-
-/
-form >
-<
-
-/
-main >
+"personality" checked>Loving</label><label><input type="checkbox"name="personality">Lazy</label><label><input type="checkbox" name="personality">Energetic</label><br><input type="text" placeholder="cat photo URL" required><button type="submit">Submit</button></form></main>
