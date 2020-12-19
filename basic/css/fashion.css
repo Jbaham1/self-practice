@@ -1,3 +1,6 @@
 .header{
-    background-color: black;
+    background-color: #494844;
+}
+body, .card {
+    background-color: #F7F7ED;
 }
