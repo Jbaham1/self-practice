@@ -27,3 +27,7 @@ function timeForMilkAndCookies(date) {
 function triArea(base, height) {
     return (base * height)/2
 }
+//Create a function that takes two numbers as arguments and return their sum.
+function addition(a, b) {
+    return a + b;
+}
