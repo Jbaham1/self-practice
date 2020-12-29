@@ -31,3 +31,7 @@ function triArea(base, height) {
 function addition(a, b) {
     return a + b;
 }
+//Create a function that takes the age and return the age in days.
+function calcAge(age) {
+    return age * 365
+}
