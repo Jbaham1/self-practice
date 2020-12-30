@@ -35,3 +35,7 @@ function addition(a, b) {
 function calcAge(age) {
     return age * 365
 }
+//Create a function that takes voltage and current and returns the calculated power.
+function circuitPower(voltage, current) {
+    return voltage * current
+}
