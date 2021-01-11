@@ -25,6 +25,22 @@
     $("p").click(function(){
         $(this).hide()
     });
+    //Use the correct event to hide all <p> elements with a "double-click".
+    $("p").dblclick(function(){
+        $(this).hide();
+    });
+    //When the mouse pointer enters a <p> element, it should be hidden. Use the correct event to do so.
+    $("p").mouseenter(function(){
+        $(this).hide();
+    });
+    //If you press a keyboard key inside an <input> element, it should be hidden. Use the correct event to do so.
+    $("input").keypress(function(){
+        $(this).hide();
+    });
+    //Use the on() method to attach a click event handler to all <p> elements.
+    $("p").on("click", function(){
+        $(this).hide();
+    });
 </script>
 </body>
 </html>
