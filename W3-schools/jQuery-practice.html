@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script>
+    //Use the correct selector to hide all <p> elements.
+    $("p").hide();
+    //Use the correct selector to hide an element with id="test".
+    $("#test").hide();
+    //Use the correct selector to hide all elements with class="test".
+    $(".test").hide();
+    //Use the correct selector to hide all elements in the document.
+    $("*").hide();
+    //Use the correct selector to hide all elements with an href attribute.
+    $([href]).hide();
+    //Use the correct selector to hide all odd table rows in a table.
+    $("tr:odd").hide();
+    //Use the correct event to hide all <p> elements with a "click".
+    $("p").click(function(){
+        $(this).hide()
+    });
+</script>
+</body>
+</html>
